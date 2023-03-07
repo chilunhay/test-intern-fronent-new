@@ -62,15 +62,28 @@ const Login = () => {
 
           <div className="login-function">
             <div className="checkbox-container">
-              <input
+              {/* <input
                 type="checkbox"
                 id="show-pass"
                 name="show-pass"
                 value="show"
                 onClick={() => setPasswordShown(!passwordShown)}
               />
+
               <label htmlFor="show-pass" className="checkbox-label">
                 Show password
+              </label> */}
+
+              <label htmlFor="show-pass" className="container checkbox-label">
+                Show password
+                <input
+                  type="checkbox"
+                  id="show-pass"
+                  name="show-pass"
+                  value="show"
+                  onClick={() => setPasswordShown(!passwordShown)}
+                />
+                <span className="checkmark"></span>
               </label>
             </div>
             <button className="login-btn" type="submit" onClick={handleSubmit}>
