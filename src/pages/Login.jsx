@@ -4,24 +4,44 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
+const users = [
+  {
+    id: 1,
+    email: "user1@example.com",
+    password: "password",
+  },
+  {
+    id: 2,
+    email: "user2@example.com",
+    password: "password",
+  },
+];
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordShown, setPasswordShown] = useState(false);
 
   const navigate = useNavigate();
-  //getting email password
-  const userName = localStorage.getItem("email")
-    ? localStorage.getItem("email")
-    : "chi@gmail.com";
-  const userPassword = localStorage.getItem("password")
-    ? localStorage.getItem("password")
-    : "chi123456";
 
   // Submit function
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email === userName && password === userPassword) {
+
+    const userValid1 = users.find(
+      (user) =>
+        user.email === "user1@example.com" && user.password === "password"
+    );
+
+    const userValid2 = users.find(
+      (user) =>
+        user.email === "user2@example.com" && user.password === "password"
+    );
+
+    if (email === userValid1.email && password === userValid1.password) {
+      toast.success("Login successful");
+      navigate("/profile");
+    } else if (email === userValid2.email && password === userValid2.password) {
       toast.success("Login successful");
       navigate("/profile");
     } else {
