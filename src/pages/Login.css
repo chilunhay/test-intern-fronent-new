@@ -56,28 +56,10 @@
     margin-top: 20px;
 }
 
-/* .checkbox-label {
-    color: black;
-    font-weight: bold;
-    margin-left: 8px;
-} */
-
-.login-btn {
-    border: none;
-    background-color: #5d00ff;
-    color: white;
-    font-size: 12px;
-    width: 25%;
-    padding: 10px 10px;
-    cursor: pointer;
-    border-radius: 8px;
-    outline: none;
-}
-
 /* Custom Checkboxes */
 
 /* Customize the label (the container) */
-.container {
+.checkbox-container-label {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -88,7 +70,7 @@
 }
 
 /* Hide the browser's default checkbox */
-.container input {
+.checkbox-container-label input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -108,12 +90,12 @@
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
+.checkbox-container-label:hover input~.checkmark {
     background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked~.checkmark {
+.checkbox-container-label input:checked~.checkmark {
     background-color: #5d00ff;
 }
 
@@ -125,12 +107,12 @@
 }
 
 /* Show the checkmark when checked */
-.container input:checked~.checkmark:after {
+.checkbox-container-label input:checked~.checkmark:after {
     display: block;
 }
 
 /* Style the checkmark/indicator */
-.container .checkmark:after {
+.checkbox-container-label .checkmark:after {
     left: 6px;
     top: 1px;
     width: 6px;
@@ -138,4 +120,22 @@
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
+}
+
+/* .checkbox-label {
+    color: black;
+    font-weight: bold;
+    margin-left: 8px;
+} */
+
+.login-btn {
+    border: none;
+    background-color: #5d00ff;
+    color: white;
+    font-size: 12px;
+    width: 25%;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
 }

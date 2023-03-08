@@ -8,12 +8,12 @@ const users = [
   {
     id: 1,
     email: "user1@example.com",
-    password: "password",
+    password: "chi123456",
   },
   {
     id: 2,
     email: "user2@example.com",
-    password: "password",
+    password: "chi123456",
   },
 ];
 
@@ -30,12 +30,12 @@ const Login = () => {
 
     const userValid1 = users.find(
       (user) =>
-        user.email === "user1@example.com" && user.password === "password"
+        user.email === "user1@example.com" && user.password === "chi123456"
     );
 
     const userValid2 = users.find(
       (user) =>
-        user.email === "user2@example.com" && user.password === "password"
+        user.email === "user2@example.com" && user.password === "chi123456"
     );
 
     if (email === userValid1.email && password === userValid1.password) {
@@ -94,7 +94,7 @@ const Login = () => {
                 Show password
               </label> */}
 
-              <label htmlFor="show-pass" className="container checkbox-label">
+              <label htmlFor="show-pass" className="checkbox-container-label">
                 Show password
                 <input
                   type="checkbox"
