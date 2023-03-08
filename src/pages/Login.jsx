@@ -7,12 +7,12 @@ import "./Login.css";
 const users = [
   {
     id: 1,
-    email: "user1@example.com",
+    email: "user1@gmail.com",
     password: "chi123456",
   },
   {
     id: 2,
-    email: "user2@example.com",
+    email: "user2@gmail.com",
     password: "chi123456",
   },
 ];
@@ -30,12 +30,12 @@ const Login = () => {
 
     const userValid1 = users.find(
       (user) =>
-        user.email === "user1@example.com" && user.password === "chi123456"
+        user.email === "user1@gmail.com" && user.password === "chi123456"
     );
 
     const userValid2 = users.find(
       (user) =>
-        user.email === "user2@example.com" && user.password === "chi123456"
+        user.email === "user2@gmail.com" && user.password === "chi123456"
     );
 
     if (email === userValid1.email && password === userValid1.password) {
