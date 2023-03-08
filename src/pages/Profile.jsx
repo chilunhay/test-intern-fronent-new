@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Profile.css";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -38,6 +38,13 @@ const Profile = () => {
       phone: "",
     });
   };
+
+  useEffect(() => {
+    const inputs = JSON.parse(localStorage.getItem("profile-data"));
+    if (inputs) {
+      setInput(inputs);
+    }
+  }, []);
 
   return (
     <div className="profile-background">
