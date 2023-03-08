@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Cách chạy code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Đầu tiên clone project trên github về:
 
-## Available Scripts
+### `git clone https://github.com/chilunhay/test-intern-fronent-new.git`
 
-In the project directory, you can run:
+## 2. Mở thư mục project và chạy lệnh:
 
-### `yarn start`
+### `yarn add` hoặc `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+(Để cài đặt các thư viện cần thiết)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 3. Khởi chạy project bằng lệnh:
 
-### `yarn test`
+### `yarn start` hoặc `npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Để chạy project với chế độ development
+Mở [http://localhost:3000](http://localhost:3000) để xem trên trình duyệt.
 
-### `yarn build`
+## 4. Ở trang Login đăng nhập bằng 1 trong 2 tài khoản đã tạo sẵn:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+tài khoản 1: email: `user1@gmail.com`, password: `chi123456`
+tài khoản 2: email: `user2@gmail.com`, password: `chi123456`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 5. Trang Update
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Sau khi nhập đầy đủ thông tin vào form nếu click vào button Cancel thì sẽ xóa trống các ô Input.
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+CLick vào button Update thì thông tin sẽ được lưu vào local storage bằng hàm setItem và sau đó sẽ được hiển thị vào các ô Input
+bằng việc dùng hàm getItem ra từ local storage.
